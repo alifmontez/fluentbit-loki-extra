@@ -10,7 +10,7 @@ permissions:
   packages: write
   checks: read
 
-jobs:   
+jobs:
   build:    
     runs-on: ubuntu-latest
 
