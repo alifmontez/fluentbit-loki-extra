@@ -2,8 +2,7 @@ FROM amazon/aws-for-fluent-bit:latest
 
 USER root
 
-RUN apk add --update --virtual .build-deps \
-        sudo build-base ruby-dev \
+RUN sudo amazon-linux-extras install ruby2.6
 RUN sudo gem install fluent-plugin-grafana-loki \
 RUN sudo gem install fluent-plugin-concat \
 RUN sudo gem sources --clear-all \
